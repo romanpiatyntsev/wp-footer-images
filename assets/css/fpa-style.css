@@ -1,0 +1,19 @@
+.fpa-list ul {
+    list-style: none;
+}
+
+.fpa-footer-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.fpa-list .fpa-image:hover {
+    opacity: 0.8;
+    transition: opacity 0.2s ease-in;
+}
+
+.fpa-list .fpa-image {
+    transition: opacity 0.2s ease-in;
+    padding: 2px;
+}
