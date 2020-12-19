@@ -13,5 +13,5 @@ Would you like to get amazing pictures in the site footer? When activated you wi
 
 == Changelog ==
 
-= 0.0.1 =
-* The plugin version 0.0.1
+= 1.0.0 =
+* The plugin version 1.0.0
