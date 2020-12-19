@@ -33,7 +33,7 @@
 		 */
 		public function album_render() {
 			if ( $this->is_load() ) {
-				$fpa_images = $this->api_provider->get_remote_photo_album();
+				$fpa_images = $this->api_provider->get_photo_album();
 				include( $this->get_template('fpa-footer-template') );
 			}
 		}

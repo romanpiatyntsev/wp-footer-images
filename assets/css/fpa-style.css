@@ -2,18 +2,18 @@
     list-style: none;
 }
 
-.fpa-footer-list {
+.fpa-list__footer {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
 
-.fpa-list .fpa-image:hover {
+.fpa-list .fpa-image__item:hover {
     opacity: 0.8;
     transition: opacity 0.2s ease-in;
 }
 
-.fpa-list .fpa-image {
+.fpa-list .fpa-image__item {
     transition: opacity 0.2s ease-in;
     padding: 2px;
 }

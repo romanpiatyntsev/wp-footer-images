@@ -1,18 +1,18 @@
 <?php
 
 /**
- * Footer Photo Album images template
+ * Footer Photo Album template
  * 
  * This template can be overridden by copying it to fpa/fpa-footer-template.php of the active theme.
  */
 ?>
 
-<div class="fpa-footer-wrapper">
-	<ul class="fpa-footer-list fpa-list">
+<div class="fpa-wrapper fpa-wrapper__footer">
+	<ul class="fpa-list fpa-list__footer">
 		<?php foreach ($fpa_images as $image) : ?>
-			<li class="fpa-image image-id=<?php echo $image->id; ?>">
+			<li id="fpa-<?php echo $image->id; ?>" class="fpa-image__item">
 				<a href="<?php echo $image->url; ?>" target="_new">
-					<img src="<?php echo $image->thumbnailUrl; ?>" title="<?php echo $image->title; ?>" alt="<?php echo $image->title; ?>">
+					<?php printf('<img src="%1$s" class="fpa-image" title="%2$s" alt="%2$s">', $image->thumbnailUrl, $image->title ); ?>
 				</a>
 			</li>
 		<?php endforeach; ?>

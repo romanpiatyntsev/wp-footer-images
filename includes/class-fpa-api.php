@@ -27,7 +27,7 @@ class FPA_Api
 	 * Obtaine the images from the remote Photo Album
 	 * @return Array
 	 */
-	public function get_remote_photo_album()
+	public function get_photo_album()
 	{
 		if( $this->cache->is_limit_request() ) { // limit to request is active
 
@@ -35,13 +35,13 @@ class FPA_Api
 
 		} else {
 
-			$query_params = $this->get_query_params();
-			$response = wp_remote_get( $this->api_fpa_base . '?' . $query_params );
+			$response = $this->get_remote_photo_abum();
 	
 			if ( 200 == wp_remote_retrieve_response_code( $response ) ) {
 				$body = json_decode( wp_remote_retrieve_body( $response ) );
 				$this->cache->update_last_request($body);
 			} else {
+				// get if api error
 				$body = $this->cache->get_last_request();
 			}
 
@@ -49,6 +49,10 @@ class FPA_Api
 		}
 
 		return $body;
+	}
+
+	private function get_remote_photo_abum(){
+		return wp_remote_get( $this->api_fpa_base . '?' . $this->get_query_params() );
 	}
 
 	private function get_query_params()
