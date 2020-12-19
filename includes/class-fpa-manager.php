@@ -40,7 +40,7 @@
 
 		public function load_assets() {
 			if( $this->is_load() ) {
-				wp_enqueue_style( 'fpa', FPA_URL . '/assets/css/fpa-style.css', array(), FPA_VERSION );
+				wp_enqueue_style( 'fpa', FPA_URL . 'assets/css/fpa-style.css', array(), FPA_VERSION );
 			}
 		}
 

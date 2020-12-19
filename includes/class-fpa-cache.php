@@ -10,8 +10,8 @@ class FPA_Cache
 		return get_transient( FPA_OPTION ); 
 	}
 
-	public function set_limit_request($expiration) {
-		set_transient( FPA_OPTION, true, $expiration); 
+	public function set_limit_request( $expiration ) {
+		set_transient( FPA_OPTION, true, $expiration ); 
 	}
 
 	public function get_last_request() {

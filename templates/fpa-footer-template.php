@@ -12,7 +12,7 @@
 		<?php foreach ($fpa_images as $image) : ?>
 			<li id="fpa-<?php echo $image->id; ?>" class="fpa-image__item">
 				<a href="<?php echo $image->url; ?>" target="_new">
-					<?php printf('<img src="%1$s" class="fpa-image" title="%2$s" alt="%2$s">', $image->thumbnailUrl, $image->title ); ?>
+					<?php printf('<img src="%1$s" class="fpa-image" loading="lazy" title="%2$s" alt="%2$s">', $image->thumbnailUrl, $image->title ); ?>
 				</a>
 			</li>
 		<?php endforeach; ?>

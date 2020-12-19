@@ -16,7 +16,7 @@ class FPA_Api
 	 */
 	private $cache;
 
-	public function __construct($album_id)
+	public function __construct( $album_id )
 	{
 		$this->cache = new FPA_Cache();
 		$this->api_fpa_base = 'https://jsonplaceholder.typicode.com/photos';
@@ -39,13 +39,13 @@ class FPA_Api
 	
 			if ( 200 == wp_remote_retrieve_response_code( $response ) ) {
 				$body = json_decode( wp_remote_retrieve_body( $response ) );
-				$this->cache->update_last_request($body);
+				$this->cache->update_last_request( $body );
 			} else {
 				// get if api error
 				$body = $this->cache->get_last_request();
 			}
 
-			$this->cache->set_limit_request(1 * MINUTE_IN_SECONDS);
+			$this->cache->set_limit_request( 1 * MINUTE_IN_SECONDS );
 		}
 
 		return $body;
