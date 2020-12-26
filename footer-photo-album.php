@@ -1,7 +1,7 @@
 <?php
 
 /*
- * Plugin Name:       Footer Photo Album - Test Task
+ * Plugin Name:       Footer Photo Album
  * Description:       Would you like to get amazing pictures in the site footer? When activated you will get images from the remote album and will show them in the footer of the site's front page.
  * Version:           1.0.0
  * Author:            Roman Piatyntsev

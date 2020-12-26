@@ -1,7 +1,7 @@
-=== Footer Photo Album - Test Task ===
+=== Footer Photo Album ===
 
 Contributors: Roman Piatyntsev
-Tags: Footer Images, Test Task
+Tags: Footer Images
 Tested up to: 5.6
 Stable tag: 1.0.0
 License: GPLv3 or later
