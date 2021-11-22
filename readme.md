@@ -14,4 +14,4 @@ Would you like to get amazing pictures in the site footer? When activated you wi
 ## Changelog 
 
 ### 1.0.0
-* The plugin version 1.0.0
+The plugin version 1.0.0
