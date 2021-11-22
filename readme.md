@@ -1,4 +1,5 @@
 ### Footer Photo Album
+
 Contributors: Roman Piatyntsev
 Tags: Footer Images
 Tested up to: 5.6
